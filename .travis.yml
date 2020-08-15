@@ -1,5 +1,5 @@
+os: linus
 language: java
-sudo: true
 dist: trusty
 jdk: oraclejdk9
 addons:
