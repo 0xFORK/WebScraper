@@ -1,18 +1,22 @@
 # A Simple Web Scraping API
+![GitHub repo size](https://img.shields.io/github/repo-size/tes-id/WebScraper)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/tes-id/WebScraper)
+![GitHub top language](https://img.shields.io/github/languages/top/tes-id/WebScraper)
+[![Build Status](https://travis-ci.org/tes-id/WebScraper.svg)](https://travis-ci.org/github/tes-id/WebScraper)
+![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/tes-id/WebScraper)
+![GitHub last commit](https://img.shields.io/github/last-commit/tes-id/WebScraper)
+![GitHub](https://img.shields.io/github/license/tes-id/WebScraper)
 
 ## Quick Start
 This section contains the pre-requisite to run the application and how to use the API.
 
-### Travis
-[![Build Status](https://travis-ci.org/Prempeh-Gyan/WebScraper.svg)](https://travis-ci.org/Prempeh-Gyan/WebScraper)
-
 ### Deploy on Heroku
 To deploy this project on Heroku, click the button below:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/Prempeh-Gyan/WebScraper)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/tes-id/WebScraper)
 
 ### Or Simply wake the Dyno
-[`Wake the Dyno`](https://webskraper.herokuapp.com/)
+[`Wake the Dyno`](https://tes-id-webscraper.herokuapp.com/)
 It takes between 15 to 20 seconds to wake the Dyno, you will need a little patience
 
 
@@ -20,7 +24,7 @@ It takes between 15 to 20 seconds to wake the Dyno, you will need a little patie
 
 *Required*
 * [`Maven`](https://maven.apache.org/) 3.3+
-* [`JDK`](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) 8+ 
+* [`JDK`](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) 8+
 
 *Optional*
 * [`Postman`](https://www.getpostman.com/) - for testing the api endpoint
@@ -70,7 +74,7 @@ import java.io.IOException;
 import java.util.Map;
 /**
  * This is the WebScrapingService interface defining the action required to retrieve a summary of the links on a web page
- * 
+ *
  * @author Prince Prempeh Gyan
  * @version 1.0 <br/>
  *          Date: 19/10/2017
@@ -105,7 +109,7 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * This WebScrapingService Implementation takes a url, uses Jsoup to connect to the page,
  * extract links from the page and return a list of all the links on the page
- * 
+ *
  * @author Prince Prempeh Gyan
  * @version 1.1 <br/>
  *          Date: 19/10/2017
@@ -175,7 +179,7 @@ public class WebScrapingServiceImpl implements WebScrapingService {
 	}
 
 	private Map<String, Long> getSummary(List<String> linksOnPage) {
-		
+
 		log.info("List of HostNames recieved");
 		log.info("Removing empty HostNames from list");
 		log.info("Grouping identical HostNames and counting");
@@ -198,7 +202,7 @@ public class WebScrapingServiceImpl implements WebScrapingService {
 
 ```
 
-## Graphical Overview of using the API 
+## Graphical Overview of using the API
 
 *Homepage*
 ![Homepage](https://i.imgur.com/qif3U9b.png)
@@ -223,4 +227,3 @@ public class WebScrapingServiceImpl implements WebScrapingService {
 
 *Using Postman to send POST Request*
 ![Homepage](https://i.imgur.com/i5mL4GX.png)
-
