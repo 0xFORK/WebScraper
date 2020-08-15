@@ -1,4 +1,10 @@
 language: java
-jdk:
-  - oraclejdk8
-group: deprecated-2017Q3
+os: linux
+dist: trusty
+jdk: oraclejdk9
+addons:
+  apt:
+    packages:
+      - oracle-java9-installer
+before_install:
+  - chmod +x mvnw
