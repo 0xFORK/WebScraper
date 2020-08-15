@@ -3,7 +3,7 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/tes-id/WebScraper)
 ![GitHub top language](https://img.shields.io/github/languages/top/tes-id/WebScraper)
 [![Build Status](https://travis-ci.org/tes-id/WebScraper.svg)](https://travis-ci.org/github/tes-id/WebScraper)
-![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/tes-id/WebScraper)
+[![Known Vulnerabilities](https://snyk.io/test/github/tes-id/WebScraper/badge.svg)](https://snyk.io/test/github/tes-id/WebScraper)
 ![GitHub last commit](https://img.shields.io/github/last-commit/tes-id/WebScraper)
 ![GitHub](https://img.shields.io/github/license/tes-id/WebScraper)
 
